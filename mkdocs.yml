@@ -1,0 +1,32 @@
+site_name: My Docs
+
+theme:
+  fonts: false
+  name: material
+  logo: "https://hifis.net/assets/img/HIFIS_Logo_Inverted_cropped.svg"
+  custom_dir: custom_theme
+
+nav:
+  - index.md
+  - 'Episodes':
+      - episodes/chapter1.md
+      - episodes/chapter2.md
+  - 'Tasks':
+      - tasks/task1.md
+      - tasks/task1.md
+  - about.md
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.highlight:
+        anchor_linenums: true
+    - pymdownx.superfences 
+    - attr_list
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+    - md_in_html
+
